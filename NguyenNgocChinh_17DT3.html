@@ -209,14 +209,14 @@
                 writeStatus('0');
                 element.classList.remove('btn-danger');
                 element.classList.add('btn-success');
-                element.innerText = 'Bật nước';
+                element.innerText = 'Ngắt nước';
             }
             else {
                 b=1
                 writeStatus('1');
                 element.classList.add('btn-danger');
                 element.classList.remove('btn-success');
-                element.innerText = 'Ngắt nước';
+                element.innerText = 'Bật nước';
             }
         }
         var writeStatus = function(status) {
