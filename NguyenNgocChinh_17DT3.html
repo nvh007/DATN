@@ -207,17 +207,16 @@
             if(b) {
                 b=0;
                 writeStatus('0');
-               
-                element.classList.remove('btn-danger');
-                element.classList.add('btn-success');
-                element.innerText = 'Bật nước';
+                element.classList.remove('btn-success');
+                element.classList.add('btn-danger');
+                element.innerText = 'Ngắt nước';
             }
             else {
                 b=1
                 writeStatus('1');
-                element.classList.add('btn-danger');
-                element.classList.remove('btn-success');
-                element.innerText = 'Ngắt nước';
+                element.classList.add('btn-success');
+                element.classList.remove('btn-danger');
+                element.innerText = 'Bật nước';
             }
         }
         var writeStatus = function(status) {
